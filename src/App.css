@@ -2,13 +2,6 @@ body {
   background-color: cyan;
 }
 
-/* .hop__body {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-} */
-
 .hop__main {
   display: flex;
   flex-direction: row;
