@@ -7,12 +7,12 @@ import Body from './Body';
 function App() {
   return (
     <div className="App">
-      <div class="hop__body">
         <Header />
+      <div class="hop__main">
         <Map />
         <Info />
-        <Body />
       </div>
+        <Body />
     </div>
   );
 }

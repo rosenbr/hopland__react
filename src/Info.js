@@ -1,3 +1,5 @@
+import './Info.css';
+
 function Info() {
     return (
         <div class="hop__main">
