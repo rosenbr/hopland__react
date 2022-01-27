@@ -3,6 +3,7 @@ import Header from './Header';
 import Map from './Map';
 import Info from './Info';
 import Body from './Body';
+import Card from './Card';
 
 function App() {
   return (
@@ -12,7 +13,10 @@ function App() {
         <Map />
         <Info />
       </div>
+      <div class="hop__extra">
+        <Card />
         <Body />
+      </div>
     </div>
   );
 }
