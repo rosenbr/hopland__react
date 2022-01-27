@@ -1,6 +1,6 @@
 function Header() {
     return (
-        <header>
+        <header class="hop__header">
             <p>Header/Nav Bar</p>
         </header>
     )
