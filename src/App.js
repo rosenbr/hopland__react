@@ -3,7 +3,7 @@ import Header from './components/Header/Header';
 import Map from './components/Map/Map';
 import Info from './components/Info/Info';
 import Body from './components/Body/Body';
-import Card from './components/Card/Card';
+import Vendor from './components/Vendor/Vendor';
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       </div>
       <div class="hop__extra">
         {/* <Card /> */}
-        <Card name="Neslon Family" />
+        <Vendor name="Neslon Family" />
         <Body />
       </div>
     </div>
