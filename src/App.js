@@ -16,7 +16,7 @@ function App() {
       </div>
       <div class="hop__extra">
         {/* <Card /> */}
-        <Vendor name="Neslon Family" />
+        <Vendor />
         <Body />
       </div>
     </div>

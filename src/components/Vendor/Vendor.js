@@ -1,21 +1,22 @@
-import './Vendor.css';
 // import Card from '../Card/Card';
+import './Vendor.css';
 
 function Vendor(props) {
+    
     const vendor = [
         {
             name: 'Nelson Family',
-            hours: 'M-F, 9-5',
-            phone: '(510)555-5555',
+            hours: 'Sun-Sat: 10AM-5PM',
+            phone: '(707)462-3755',
             blurb: 'Loreum Ipsum',
-            reservations: 'Y/N?',
+            reservations: 'Yes',
             directions: 'tee hee',
             _id: "qpslcmfhep"
         },
         {
             name: 'Jaxon Keys',
-            hours: 'M-F, 9-5',
-            phone: '(510)555-5555',
+            hours: 'Sun-Sat: 10AM-5PM',
+            phone: '(707)462-6666',
             blurb: 'Loreum Ipsum',
             reservations: 'Y/N?',
             directions: 'tee hee',
@@ -23,8 +24,8 @@ function Vendor(props) {
         },
         {
             name: 'Saracina',
-            hours: 'M-F, 9-5',
-            phone: '(510)555-5555',
+            hours: 'Sun-Sat: 10AM-5PM',
+            phone: '(707)670-0199',
             blurb: 'Loreum Ipsum',
             reservations: 'Y/N?',
             directions: 'tee hee',
@@ -32,8 +33,8 @@ function Vendor(props) {
         },
         {
             name: 'Golden Pig',
-            hours: 'M-F, 9-5',
-            phone: '(510)555-5555',
+            hours: 'Sun-Sat: 11AM-5PM',
+            phone: '(707)670-6055',
             blurb: 'Loreum Ipsum',
             reservations: 'Y/N?',
             directions: 'tee hee',
@@ -41,8 +42,8 @@ function Vendor(props) {
         },
         {
             name: 'Golden Pig Wine Shop',
-            hours: 'M-F, 9-5',
-            phone: '(510)555-5555',
+            hours: 'Sun-Sat: 11AM-5PM',
+            phone: '(707)744-8375',
             blurb: 'Loreum Ipsum',
             reservations: 'Y/N?',
             directions: 'tee hee',
@@ -50,8 +51,8 @@ function Vendor(props) {
         },
         {
             name: 'McNab Ridge',
-            hours: 'M-F, 9-5',
-            phone: '(510)555-5555',
+            hours: 'Mon-Fri: 9AM-5PM',
+            phone: '(707)462-2423',
             blurb: 'Loreum Ipsum',
             reservations: 'Y/N?',
             directions: 'tee hee',
@@ -59,8 +60,8 @@ function Vendor(props) {
         },
         {
             name: 'Brutocao',
-            hours: 'M-F, 9-5',
-            phone: '(510)555-5555',
+            hours: 'Sun-Sat: 10AM-5PM',
+            phone: '(707)744-1066',
             blurb: 'Loreum Ipsum',
             reservations: 'Y/N?',
             directions: 'tee hee',
@@ -68,8 +69,8 @@ function Vendor(props) {
         },
         {
             name: 'Cesar Toxqui',
-            hours: 'M-F, 9-5',
-            phone: '(510)555-5555',
+            hours: 'Sat & Sun: 12:30PM-5PM',
+            phone: '(707)391-8411',
             blurb: 'Loreum Ipsum',
             reservations: 'Y/N?',
             directions: 'tee hee',
@@ -77,8 +78,8 @@ function Vendor(props) {
         },
         {
             name: 'Terra Savia',
-            hours: 'M-F, 9-5',
-            phone: '(510)555-5555',
+            hours: 'Sun-Sat: 10AM-5PM',
+            phone: '(707)744-1114',
             blurb: 'Loreum Ipsum',
             reservations: 'Y/N?',
             directions: 'tee hee',
@@ -86,8 +87,8 @@ function Vendor(props) {
         },
         {
             name: 'Alta Orsa',
-            hours: 'M-F, 9-5',
-            phone: '(510)555-5555',
+            hours: 'Mon-Fri: 8AM-4:30PM',
+            phone: '(707)540-4311',
             blurb: 'Loreum Ipsum',
             reservations: 'Y/N?',
             directions: 'tee hee',
@@ -95,8 +96,8 @@ function Vendor(props) {
         },
         {
             name: 'Graziano',
-            hours: 'M-F, 9-5',
-            phone: '(510)555-5555',
+            hours: 'Sun-Sat: 10AM-5PM',
+            phone: '(707)744-8466',
             blurb: 'Loreum Ipsum',
             reservations: 'Y/N?',
             directions: 'tee hee',
@@ -104,8 +105,8 @@ function Vendor(props) {
         },
         {
             name: 'McFadden',
-            hours: 'M-F, 9-5',
-            phone: '(510)555-5555',
+            hours: 'Mon-Fri: 9AM-4PM',
+            phone: '(800)544-8230',
             blurb: 'Loreum Ipsum',
             reservations: 'Y/N?',
             directions: 'tee hee',
@@ -113,8 +114,8 @@ function Vendor(props) {
         },
         {
             name: 'Hopland Tap',
-            hours: 'M-F, 9-5',
-            phone: '(510)555-5555',
+            hours: 'Wed-Sun: 12PM-8PM',
+            phone: '(707)510-9000',
             blurb: 'Loreum Ipsum',
             reservations: 'Y/N?',
             directions: 'tee hee',
@@ -122,8 +123,8 @@ function Vendor(props) {
         },
         {
             name: 'Stockfarm & Campovida',
-            hours: 'M-F, 9-5',
-            phone: '(510)555-5555',
+            hours: 'Fri-Sun: 11AM-4PM',
+            phone: '(707)744-1977',
             blurb: 'Loreum Ipsum',
             reservations: 'Y/N?',
             directions: 'tee hee',
@@ -132,26 +133,26 @@ function Vendor(props) {
     ]
     
 
-    const generateVendor = vendor => {
-        return vendor.map(function (vendor) {
-            return (
-            <div clas="hop__card">
-                <Vendor />
-            </div>   
-                )
-        });
-    }
+    // const generateVendor = vendor => {
+    //     return vendor.map(function (vendor) {
+    //         return (
+    //         <div clas="hop__vendor">
+    //             <Card />
+    //         </div>   
+    //             )
+    //     });
+    // }
 
     return (
         <div class="hop__vendor">
-            {/* <h3 key={vendor._id}>Pic Placeholder copy image address</h3> */}
-            <h3 key={vendor._id}>{props.name}</h3>
-            {/* <h4 key={vendor._id}>{props.hours}</h4> */}
-            {/* <h4 key={vendor._id}>{props.phone}</h4> */}
-            {/* <p key={vendor._id}>Blurb</p> */}
-            {/* <h4 key={vendor._id}>Reso's</h4> */}
-            {/* <h4 key={vendor._id}>Directions</h4> */}
             {/* {generateVendor(vendor)} */}
+            {/* <h3 key={vendor._id}>Pic Placeholder copy image address</h3> */}
+            <h3 key={vendor._id}>Name</h3>
+            {/* <h3 key={vendor._id}>{props.hours}</h3> */}
+            {/* <h4 key={vendor._id}>{props.phone}</h4> */}
+            {/* <p key={vendor._id}>{props.blurb}</p> */}
+            {/* <h4 key={vendor._id}>{props.reservations}</h4> */}
+            {/* <h4 key={vendor._id}>{props.directions}</h4> */}
             {/* <Card /> */}
         </div>
     )
