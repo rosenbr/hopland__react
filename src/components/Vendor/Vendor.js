@@ -147,13 +147,14 @@ function Vendor(props) {
         <div class="hop__vendor">
             {/* {generateVendor(vendor)} */}
             {/* <h3 key={vendor._id}>Pic Placeholder copy image address</h3> */}
-            <h3 key={vendor._id}>Name</h3>
-            <h3 key={vendor._id}>{props.hours}</h3>
+            {/* <h3 key={vendor._id}>Name</h3> */}
+            {/* <h3 key={vendor._id}>{props.hours}</h3> */}
             {/* <h4 key={vendor._id}>{props.phone}</h4> */}
             {/* <p key={vendor._id}>{props.blurb}</p> */}
             {/* <h4 key={vendor._id}>{props.reservations}</h4> */}
             {/* <h4 key={vendor._id}>{props.directions}</h4> */}
             {/* <Card /> */}
+            <h3>{props.name}</h3>
         </div>
     )
 }
