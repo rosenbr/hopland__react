@@ -3,6 +3,8 @@
     box-shadow: 0 2px 2px #ccc;
     display: flex;
     flex-direction: row;
+    border-radius: 5px;
+    padding: 20px;
 }
 
 .vendor__info {
