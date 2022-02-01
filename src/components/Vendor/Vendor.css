@@ -1,4 +1,17 @@
 .hop__vendor {
     background-color: hotpink;
     box-shadow: 0 2px 2px #ccc;
+    display: flex;
+    flex-direction: row;
+}
+
+.vendor__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.vendor__blurb {
+    display: flex;
+    flex-direction: column;
 }

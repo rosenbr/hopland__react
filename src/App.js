@@ -1,22 +1,27 @@
 import './App.css';
-import Header from './components/Header/Header';
 import Map from './components/Map/Map';
 import Info from './components/Info/Info';
 import Body from './components/Body/Body';
-import Vendor from './components/Vendor/Vendor';
+import Popup from './components/Popup/Popup'
+import { useState } from 'react';
 
 function App() {
+  // IF you want components to share the same data, the parents MUST hold the data
+  const [buttonPopup, setButtonPopup] = useState(false);
+
   return (
-    // IF you want components to share the same data, the parents MUST hold the data
     <div className="App">
-        <Header />
+      <div className="hop__popup">
+        <button onClick={() => setButtonPopup(true)}>Test button</button>
+      </div>
+        <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
+          <h3>Popup</h3>
+        </Popup>
       <div class="hop__main">
         <Map />
         <Info />
       </div>
       <div class="hop__extra">
-        {/* <Card /> */}
-        <Vendor />
         <Body />
       </div>
     </div>

@@ -1,8 +1,8 @@
 // import Card from '../Card/Card';
 import './Vendor.css';
 
-function Vendor(props) {
-    
+function Vendor() {
+    // state = stuff that changes. props = stuff that is static
     const vendor = [
         {
             name: 'Nelson Family',
@@ -11,7 +11,7 @@ function Vendor(props) {
             blurb: 'Loreum Ipsum',
             reservations: 'Yes',
             directions: 'tee hee',
-            _id: "qpslcmfhep"
+            // _id: "qpslcmfhep"
         },
         {
             name: 'Jaxon Keys',
@@ -20,7 +20,7 @@ function Vendor(props) {
             blurb: 'Loreum Ipsum',
             reservations: 'Y/N?',
             directions: 'tee hee',
-            _id: "qpalsmdneh"
+            // _id: "qpalsmdneh"
         },
         {
             name: 'Saracina',
@@ -29,7 +29,7 @@ function Vendor(props) {
             blurb: 'Loreum Ipsum',
             reservations: 'Y/N?',
             directions: 'tee hee',
-            _id: "xbvndjelsp"
+            // _id: "xbvndjelsp"
         },
         {
             name: 'Golden Pig',
@@ -38,7 +38,7 @@ function Vendor(props) {
             blurb: 'Loreum Ipsum',
             reservations: 'Y/N?',
             directions: 'tee hee',
-            _id: "zsrdmpuhng"
+            // _id: "zsrdmpuhng"
         },
         {
             name: 'Golden Pig Wine Shop',
@@ -47,7 +47,7 @@ function Vendor(props) {
             blurb: 'Loreum Ipsum',
             reservations: 'Y/N?',
             directions: 'tee hee',
-            _id: "qewppcheng"
+            // _id: "qewppcheng"
         },
         {
             name: 'McNab Ridge',
@@ -56,7 +56,7 @@ function Vendor(props) {
             blurb: 'Loreum Ipsum',
             reservations: 'Y/N?',
             directions: 'tee hee',
-            _id: "ghemspcong"
+            // _id: "ghemspcong"
         },
         {
             name: 'Brutocao',
@@ -65,7 +65,7 @@ function Vendor(props) {
             blurb: 'Loreum Ipsum',
             reservations: 'Y/N?',
             directions: 'tee hee',
-            _id: "zwimtbcpga"
+            // _id: "zwimtbcpga"
         },
         {
             name: 'Cesar Toxqui',
@@ -74,7 +74,7 @@ function Vendor(props) {
             blurb: 'Loreum Ipsum',
             reservations: 'Y/N?',
             directions: 'tee hee',
-            _id: "wsrltmbcod"
+            // _id: "wsrltmbcod"
         },
         {
             name: 'Terra Savia',
@@ -83,7 +83,7 @@ function Vendor(props) {
             blurb: 'Loreum Ipsum',
             reservations: 'Y/N?',
             directions: 'tee hee',
-            _id: "yxnblpsyen"
+            // _id: "yxnblpsyen"
         },
         {
             name: 'Alta Orsa',
@@ -92,7 +92,7 @@ function Vendor(props) {
             blurb: 'Loreum Ipsum',
             reservations: 'Y/N?',
             directions: 'tee hee',
-            _id: "sngjhltmen"
+            // _id: "sngjhltmen"
         },
         {
             name: 'Graziano',
@@ -101,7 +101,7 @@ function Vendor(props) {
             blurb: 'Loreum Ipsum',
             reservations: 'Y/N?',
             directions: 'tee hee',
-            _id: "xmnbpelvms"
+            // _id: "xmnbpelvms"
         },
         {
             name: 'McFadden',
@@ -110,7 +110,7 @@ function Vendor(props) {
             blurb: 'Loreum Ipsum',
             reservations: 'Y/N?',
             directions: 'tee hee',
-            _id: "qpvneixlwn"
+            // _id: "qpvneixlwn"
         },
         {
             name: 'Hopland Tap',
@@ -119,7 +119,7 @@ function Vendor(props) {
             blurb: 'Loreum Ipsum',
             reservations: 'Y/N?',
             directions: 'tee hee',
-            _id: "wpfkvnrhdy"
+            // _id: "wpfkvnrhdy"
         },
         {
             name: 'Stockfarm & Campovida',
@@ -128,7 +128,7 @@ function Vendor(props) {
             blurb: 'Loreum Ipsum',
             reservations: 'Y/N?',
             directions: 'tee hee',
-            _id: "fjdkeovpfn"
+            // _id: "fjdkeovpfn"
         }
     ]
     
@@ -145,16 +145,15 @@ function Vendor(props) {
 
     return (
         <div class="hop__vendor">
-            {/* {generateVendor(vendor)} */}
-            {/* <h3 key={vendor._id}>Pic Placeholder copy image address</h3> */}
-            {/* <h3 key={vendor._id}>Name</h3> */}
-            {/* <h3 key={vendor._id}>{props.hours}</h3> */}
-            {/* <h4 key={vendor._id}>{props.phone}</h4> */}
-            {/* <p key={vendor._id}>{props.blurb}</p> */}
-            {/* <h4 key={vendor._id}>{props.reservations}</h4> */}
-            {/* <h4 key={vendor._id}>{props.directions}</h4> */}
-            {/* <Card /> */}
-            <h3>{props.name}</h3>
+            <h3 class="vendor__pic">Pic</h3>
+            <div class="vendor__info">
+                <h3 class="vendor__info">Name</h3>
+                <h3 class="vendor__info">Hours</h3>
+                <h3 class="vendor__info">Phone</h3>
+                <h3 class="vendor__blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</h3>
+                <h3 class="vendor__directions">Directions</h3>
+            </div>
+            {/* <h3 class="vendor__reso">Reso's</h3> */}
         </div>
     )
 }
