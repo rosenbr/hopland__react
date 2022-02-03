@@ -10,7 +10,7 @@ function Popup(props) {
                     <button className="close__button" onClick={() => props.setTrigger(false)}>X</button>
                     {props.children}
                     <Vendor
-                    // name={this.state.name}
+                    // name={this.data.name}
                     // phone={this.state.phone}
                     // hours={this.state.hours}
                     // blurb={this.state.blurb}
