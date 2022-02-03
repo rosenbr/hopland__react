@@ -12,9 +12,12 @@ function App() {
   return (
     <div className="App">
       <div className="hop__popup">
-        <button onClick={() => setButtonPopup(true)}>Test button</button>
+        <button onClick={() => setButtonPopup(true)}>Test button 1</button>
       </div>
-        <Popup trigger={buttonPopup} setTrigger={setButtonPopup} />
+      <div className="hop__popup">
+        <button onClick={() => setButtonPopup(true)}>Test button 2</button>
+      </div>
+      <Popup trigger={buttonPopup} setTrigger={setButtonPopup} />
       <div class="hop__main">
         <Map />
         <Info />
