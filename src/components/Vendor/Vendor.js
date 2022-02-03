@@ -2,48 +2,24 @@
 import React from 'react';
 import './Vendor.css';
 
-function Vendor() {
-    
-    // data = {
-    //     name: 'Nelson Family',
-    //     hours: 'Sun-Sat: 10AM-5PM',
-    //     phone: '(707)462-3755',
-    //     blurb: 'Loreum Ipsum',
-    //     reservations: 'Yes',
-    //     directions: 'tee hee',
-    //     _id: "qpslcmfhep"
-    // }
+function Vendor({ name, hours, phone }) {
 
-    // state = {
-    //     name: "",
-    //     hours: "",
-    //     phone: "",
-    //     blurb: "",
-    //     reservations: "",
-    //     directions: "",
-    //     // _id: "",
-    //     // pic: ""
-    // }
+    const data = {
+        name: "Nelson",
+        hours: "M-F, 9AM to 4PM",
+        phone: "(555)555-5555",
+        blurb: "New blurb dummy text. tee hee!"
+    }
 
-    // handleClick = () => {
-    //     this.setState({send:true})
-    // }
-    // constructor(props) {
-    //     super(props);
-    //     this.state = {}
-    // }
-    
         return (
             <div class="hop__vendor">
                 <h3 class="vendor__pic">Pic</h3>
                 <div class="vendor__info">
-                    <h3 class="vendor__info">Name</h3>
-                    <h3 class="vendor__info">Hours</h3>
-                    <h3 class="vendor__info">Phone</h3>
-                    <h3 class="vendor__blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</h3>
-                    <h3 class="vendor__directions">Directions</h3>
+                    <h3 class="vendor__info">{data.name}</h3>
+                    <h3 class="vendor__info">{data.hours}</h3>
+                    <h3 class="vendor__info">{data.phone}</h3>
+                    <h3 class="vendor__blurb">{data.blurb}</h3>
                 </div>
-                {/* <h3 class="vendor__reso">Reso's</h3> */}
             </div>
         )
     // state = stuff that changes. props = stuff that is static
@@ -175,17 +151,6 @@ function Vendor() {
     //         // _id: "fjdkeovpfn"
     //     }
     // ]
-    
-
-    // const generateVendor = vendor => {
-    //     return vendor.map(function (vendor) {
-    //         return (
-    //         <div clas="hop__vendor">
-    //             <Card />
-    //         </div>   
-    //             )
-    //     });
-    // }
 }
 
 export default Vendor;

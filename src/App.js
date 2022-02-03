@@ -4,11 +4,9 @@ import Info from './components/Info/Info';
 import Body from './components/Body/Body';
 // import Popup from './components/Popup/Popup';
 import Button from './components/Button/Button';
-import { useState } from 'react';
 
 function App() {
   // IF you want components to share the same data, the parents MUST hold the data
-  const [buttonPopup, setButtonPopup] = useState(false);
 
   return (
     <div className="App">
