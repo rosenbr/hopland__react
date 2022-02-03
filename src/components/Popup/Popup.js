@@ -4,8 +4,6 @@ import Vendor from '../Vendor/Vendor';
 
 function Popup(props) {
 
-    // render(props){
-
         return (props.trigger) ? (
             <div className="popup">
                 <div className="popup__inner">
@@ -20,7 +18,6 @@ function Popup(props) {
                 </div>
             </div>
         ) : "";
-    // }
 };
 
 export default Popup;

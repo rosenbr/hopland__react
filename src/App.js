@@ -15,9 +15,6 @@ function App() {
         <button onClick={() => setButtonPopup(true)}>Test button 1</button>
         <Popup trigger={buttonPopup} setTrigger={setButtonPopup} />
       </div>
-      <div className="hop__popup">
-        <button onClick={() => setButtonPopup(true)}>Test button 2</button>
-      </div>
       <div class="hop__main">
         <Map />
         <Info />
