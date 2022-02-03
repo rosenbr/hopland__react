@@ -2,7 +2,7 @@
 import React from 'react';
 import './Vendor.css';
 
-class Vendor extends React.Component {
+function Vendor() {
     
     // data = {
     //     name: 'Nelson Family',
@@ -33,7 +33,6 @@ class Vendor extends React.Component {
     //     this.state = {}
     // }
     
-    render(){
         return (
             <div class="hop__vendor">
                 <h3 class="vendor__pic">Pic</h3>
@@ -47,7 +46,6 @@ class Vendor extends React.Component {
                 {/* <h3 class="vendor__reso">Reso's</h3> */}
             </div>
         )
-    }
     // state = stuff that changes. props = stuff that is static
     // const vendor = [
     //     {
