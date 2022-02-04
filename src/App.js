@@ -12,8 +12,8 @@ function App() {
     <div className="App">
       <div class="hop__button">
         <Button />
-        <Button />
-        <Button />
+        {/* <Button /> */}
+        {/* <Button /> */}
       </div>
       <div class="hop__main">
         <Map />
