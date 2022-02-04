@@ -2,14 +2,14 @@
 import React from 'react';
 import './Vendor.css';
 
-function Vendor({ name, hours, phone }) {
+function Vendor({ name, hours, phone, blurb }) {
 
-    const data = {
-        name: "Nelson",
-        hours: "M-F, 9AM to 4PM",
-        phone: "(555)555-5555",
-        blurb: "New blurb dummy text. tee hee!"
-    }
+    const data = {         
+            name: "Nelson",
+            hours: "M-F, 9AM to 4PM",
+            phone: "(555)555-5555",
+            blurb: "New blurb dummy text. tee hee!",
+        }
 
         return (
             <div class="hop__vendor">
@@ -22,7 +22,6 @@ function Vendor({ name, hours, phone }) {
                 </div>
             </div>
         )
-    // state = stuff that changes. props = stuff that is static
     // const vendor = [
     //     {
     //         name: 'Nelson Family',
