@@ -10,9 +10,11 @@ function App() {
 
   return (
     <div className="App">
-      <Button />
-      <Button />
-      <Button />
+      <div class="hop__button">
+        <Button />
+        <Button />
+        <Button />
+      </div>
       <div class="hop__main">
         <Map />
         <Info />
