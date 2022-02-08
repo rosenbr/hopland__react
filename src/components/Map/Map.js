@@ -3,8 +3,8 @@ import hoplandmap from '../pics/hoplandmap.jpeg'
 
 function Map() {
     return (
-            <div class="hop__map">
-                <img src={hoplandmap} alt="Destination Hopland Map" class="hop__map"></img>
+            <div className="hop__map">
+                <img src={hoplandmap} alt="Destination Hopland Map" className="hop__map"></img>
             </div>
     )
 }

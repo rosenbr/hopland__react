@@ -2,8 +2,8 @@ import './App.css';
 import Map from './components/Map/Map';
 import Info from './components/Info/Info';
 import Body from './components/Body/Body';
-// import Popup from './components/Popup/Popup';
 import Button from './components/Button/Button';
+import ListItems from './components/ListItems/ListItems';
 
 // NOTES
 // IF you want components to share the same data, the parents MUST hold the data
@@ -15,15 +15,15 @@ function App() {
 
   return (
     <div className="App">
-      <div class="hop__button">
-        <Button />
+      <div className="hop__button">
         <Button />
       </div>
-      <div class="hop__main">
+      <div className="hop__main">
         <Map />
         <Info />
       </div>
-      <div class="hop__extra">
+      <div className="hop__extra">
+        <ListItems />
         <Body />
       </div>
     </div>

@@ -4,7 +4,7 @@ import './Vendor.css';
 
 function Vendor({ name, hours, phone, blurb }) {
 
-    // === | Real data set | ===
+    // === | Real data set and return | ===
     // const vendor = [
     //     {
     //         id: 1,
@@ -136,19 +136,18 @@ function Vendor({ name, hours, phone, blurb }) {
     
     // return (
     //     vendor.map((vendor) => {
-    //         <div class="hop__vendor">
-    //             <div class="vendor__info" key={id}>
-    //                 <h3 class="vednor__info">{vendor.name}</h3>
-    //                 <h3 class="vednor__info">{vendor.hours}</h3>
-    //                 <h3 class="vednor__info">{vendor.phone}</h3>
-    //                 <h3 class="vednor__info">{vendor.blurb}</h3>
+    //         <div className="hop__vendor">
+    //             <div className="vendor__info" key={id}>
+    //                 <h3 className="vednor__info">{vendor.name}</h3>
+    //                 <h3 className="vednor__info">{vendor.hours}</h3>
+    //                 <h3 className="vednor__info">{vendor.phone}</h3>
+    //                 <h3 className="vednor__info">{vendor.blurb}</h3>
     //             </div>
     //         </div>
     //     })
     // )
 
-
-    // === | Test data set | ===
+    // === | Test data set and return | ===
         const data = 
             {
                 id: 1,
@@ -159,13 +158,13 @@ function Vendor({ name, hours, phone, blurb }) {
             }
 
         return (
-            <div class="hop__vendor">
-                <h3 class="vendor__pic">Pic</h3>
-                <div class="vendor__info">
-                    <h3 class="vendor__info">{data.name}</h3>
-                    <h3 class="vendor__info">{data.hours}</h3>
-                    <h3 class="vendor__info">{data.phone}</h3>
-                    <h3 class="vendor__blurb">{data.blurb}</h3>
+            <div className="hop__vendor">
+                <h3 className="vendor__pic">Pic</h3>
+                <div className="vendor__info">
+                    <h3 className="vendor__info">{data.name}</h3>
+                    <h3 className="vendor__info">{data.hours}</h3>
+                    <h3 className="vendor__info">{data.phone}</h3>
+                    <h3 className="vendor__blurb">{data.blurb}</h3>
                 </div>
             </div>
     )
