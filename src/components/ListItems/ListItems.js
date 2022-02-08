@@ -1,10 +1,12 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import './ListItems.css';
 import Button from '../Button/Button';
 
 const ListItems = () => {
+    
+    const [vendorsList, setVendorsList] = useState([])
 
-    const vendors = [
+    let vendors = [
             {
                 id: 1,
                 name: 'Nelson Family',
@@ -131,12 +133,17 @@ const ListItems = () => {
                 // reservations: 'Y/N?',
                 // directions: 'tee hee',
             }
-        ]
+    ]
+
+    useEffect(() => {
+        setVendorsList([...vendors]);
+      console.log("vendorsList", vendorsList)
+    }, []);
 
     return (
-        vendors.map((vendor) => (
+        vendorsList.map((vendor) => (
             <div className='card' key={vendor.id}>
-                    <Button />
+                    <Button key={vendor.id}/>
                     <h3>{vendor.name}</h3>
                     <h3>{vendor.hours}</h3>
                     <h3>{vendor.phone}</h3>
@@ -144,8 +151,6 @@ const ListItems = () => {
             </div>
         ))
     )
-
-
 }
 
 export default ListItems;
