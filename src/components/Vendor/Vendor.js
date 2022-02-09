@@ -1,20 +1,19 @@
-// import Card from '../Card/Card';
 import React from 'react';
 import './Vendor.css';
 
-function Vendor({ name, hours, phone, blurb }) {
+const Vendor = ({ id, name, hours, phone, blurb }) => {
+
+    // vendorData={this.state.vendors}
 
     // return (
-    //     vendor.map((vendor) => {
     //         <div className="hop__vendor">
     //             <div className="vendor__info" key={id}>
-    //                 <h3 className="vednor__info">{vendor.name}</h3>
+    //                 <h3 className="vednor__info">{this.props.vendors}</h3>
     //                 <h3 className="vednor__info">{vendor.hours}</h3>
     //                 <h3 className="vednor__info">{vendor.phone}</h3>
     //                 <h3 className="vednor__info">{vendor.blurb}</h3>
     //             </div>
     //         </div>
-    //     })
     // )
 
     // === | Test data set and return | ===

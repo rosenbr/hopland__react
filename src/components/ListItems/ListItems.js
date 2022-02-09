@@ -3,7 +3,7 @@ import './ListItems.css';
 import Button from '../Button/Button';
 
 const ListItems = () => {
-    
+
     const [vendorsList, setVendorsList] = useState([])
 
     let vendors = [
