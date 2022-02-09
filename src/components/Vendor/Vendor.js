@@ -3,16 +3,21 @@ import './Vendor.css';
 
 const Vendor = () => {
 
-    // let vendorData = {vendors}
+    // const [vendorsList, setVendorsList] = useState([])
+
+    // { id, name, hours, phone, blurb }
+    // useEffect(() => {
+    //     setVendorsList([vendors]);
+    //   console.log("vendorsList", vendorsList)
+    // }, []);
 
     // return (
     //         <div className="hop__vendor">
     //             <div className="vendor__info">
-    //                 {vendorData}
-    //                 <h3 className="vendor__info">{vendorData.name}</h3>
-    //                 {/* <h3 className="vendor__info">{vendor.hours}</h3> */}
-    //                 {/* <h3 className="vendor__info">{vendor.phone}</h3> */}
-    //                 {/* <h3 className="vendor__info">{vendor.blurb}</h3> */}
+    //                 <h3 className="vendor__info" key={id}>{this.name}</h3>
+    //                 {/* <h3 className="vendor__info">{hours}</h3> */}
+    //                 {/* <h3 className="vendor__info">{phone}</h3> */}
+    //                 {/* <h3 className="vendor__info">{blurb}</h3> */}
     //             </div>
     //         </div>
     // )
