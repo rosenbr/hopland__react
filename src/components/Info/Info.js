@@ -1,6 +1,6 @@
 import './Info.css';
 
-function Info() {
+const Info = () => {
     return (
         <div className="hop__head">
             <img src="" alt="Destination Hopland Logo" className="hop__top"></img>

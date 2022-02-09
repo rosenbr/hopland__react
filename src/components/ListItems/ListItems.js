@@ -144,10 +144,10 @@ const ListItems = () => {
         vendorsList.map((vendor) => (
             <div className='card' key={vendor.id}>
                     <Button key={vendor.id}/>
-                    <h3>{vendor.name}</h3>
+                    {/* <h3>{vendor.name}</h3>
                     <h3>{vendor.hours}</h3>
                     <h3>{vendor.phone}</h3>
-                    <h3>{vendor.blurb}</h3>
+                    <h3>{vendor.blurb}</h3> */}
             </div>
         ))
     )

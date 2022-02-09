@@ -1,17 +1,18 @@
 import React from 'react';
 import './Vendor.css';
 
-const Vendor = ({ id, name, hours, phone, blurb }) => {
+const Vendor = () => {
 
-    // vendorData={this.state.vendors}
+    // let vendorData = {vendors}
 
     // return (
     //         <div className="hop__vendor">
-    //             <div className="vendor__info" key={id}>
-    //                 <h3 className="vednor__info">{this.props.vendors}</h3>
-    //                 <h3 className="vednor__info">{vendor.hours}</h3>
-    //                 <h3 className="vednor__info">{vendor.phone}</h3>
-    //                 <h3 className="vednor__info">{vendor.blurb}</h3>
+    //             <div className="vendor__info">
+    //                 {vendorData}
+    //                 <h3 className="vendor__info">{vendorData.name}</h3>
+    //                 {/* <h3 className="vendor__info">{vendor.hours}</h3> */}
+    //                 {/* <h3 className="vendor__info">{vendor.phone}</h3> */}
+    //                 {/* <h3 className="vendor__info">{vendor.blurb}</h3> */}
     //             </div>
     //         </div>
     // )

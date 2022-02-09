@@ -1,9 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Button.css';
 import Popup from '../Popup/Popup';
-import { useState } from 'react';
 
-function Button() {
+const Button = () => {
 
     const [buttonPopup, setButtonPopup] = useState(false);
 

@@ -2,7 +2,7 @@ import React from 'react';
 import './Popup.css';
 import Vendor from '../Vendor/Vendor';
 
-function Popup(props) {
+const Popup = (props) => {
         return (props.trigger) ? (
             <div className="popup">
                 <div className="popup__inner">

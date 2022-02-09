@@ -3,7 +3,6 @@ import Map from './components/Map/Map';
 import Info from './components/Info/Info';
 import ListItems from './components/ListItems/ListItems';
 import Body from './components/Body/Body';
-// import Button from './components/Button/Button';
 
 // NOTES
 // IF you want components to share the same data, the parents MUST hold the data
@@ -15,9 +14,6 @@ function App() {
 
   return (
     <div className="App">
-      {/* <div className="hop__button">
-        <Button />
-      </div> */}
       <div className="hop__main">
         <Map />
         <Info />
