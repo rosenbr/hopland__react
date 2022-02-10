@@ -163,13 +163,7 @@ const ListItems = () => {
     return (
         vendorsList.map((vendor) => (
             <div className='card' key={vendor.id}>
-                    <Button 
-                        // id={vendor.id}
-                        // title={vendor.title}
-                        // hours={vendor.hours}
-                        // phone={vendor.phone}
-                        // blurb={vendor.blurb}
-                    />
+                    <Button />
                     <h3>{vendor.title}</h3>
                     <h3>{vendor.hours}</h3>
                     <h3>{vendor.phone}</h3>
