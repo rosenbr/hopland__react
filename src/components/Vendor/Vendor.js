@@ -3,6 +3,9 @@ import './Vendor.css';
 
 const Vendor = () => {
 
+    // const vendorDetails = React.useContext(VendorContext);
+    // const setVendorDetails = useContext(VendorDispatchContext);
+
     // const [vendorsList, setVendorsList] = useState([])
 
     // { id, title, hours, phone, blurb }

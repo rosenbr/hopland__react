@@ -1,32 +1,12 @@
-// import React, {useContext} from 'react';
-// import "useEffect, useState" above
-import React, {useEffect, useState} from 'react';
-import './ListItems.css';
-import Button from '../Button/Button';
+import React, {createContext, useState} from "react";
 
-const ListItems = () => {
+const VendorContext = createContext(undefined);
+const VendorDispatchContext = createContext(undefined);
 
-    // ==== | Conext code | ====
+function VendorProvider({children}) {
 
-    // const vendorDetails = React.useContext(VendorContext);
-    // const setVendorDetails = useContext(VendorDispatchContext);
-
-    // const [vendorDetails, setVendorDetails] = useState({
-    //     title: vendors.title
-    // })
-
-    // ==== | State with Robin | ====
-
-    // add props in the arrow func above
-    // const id = props.id;
-    // const vendorInfo = (
-    //     title: props.title,
-    //     hours: props.hours
-    // )
-
-    const [vendorsList, setVendorsList] = useState([]);
-
-    let vendors = [
+    const [vendorDetails, setVendorDetails] = useState({
+        vendors: [
             {
                 id: 1,
                 title: 'Nelson Family',
@@ -154,37 +134,15 @@ const ListItems = () => {
                 // directions: 'tee hee',
             }
     ]
-
-    useEffect(() => {
-        setVendorsList([...vendors]);
-      console.log("vendorsList", vendorsList)
-    }, []);
+    });
 
     return (
-        vendorsList.map((vendor) => (
-            <div className='card' key={vendor.id}>
-                    <Button 
-                        // id={vendor.id}
-                        // title={vendor.title}
-                        // hours={vendor.hours}
-                        // phone={vendor.phone}
-                        // blurb={vendor.blurb}
-                    />
-                    <h3>{vendor.title}</h3>
-                    <h3>{vendor.hours}</h3>
-                    <h3>{vendor.phone}</h3>
-                    <h3>{vendor.blurb}</h3>
-            </div>
-        ))
+        <VendorContext.Provider value={vendorDetails} >
+            <VendorDispatchContext.Provider value={setVendorDetails}>
+                {children}
+            </VendorDispatchContext.Provider>
+        </VendorContext.Provider>
     )
-        
-    // ==== | Context return | ====
-
-    // return (
-        //     <div className='card'>
-        //         <Button />
-        //         <h3>{vendorDetails.title}</h3>
-        //     </div>
-        // )
 }
-export default ListItems;
+
+export default { VendorProvider, VendorContext, VendorDispatchContext };

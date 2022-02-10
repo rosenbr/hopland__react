@@ -3,6 +3,8 @@ import Map from './components/Map/Map';
 import Info from './components/Info/Info';
 import ListItems from './components/ListItems/ListItems';
 import Body from './components/Body/Body';
+// import VendorProvider from './components/VendorProvider/VendorProvider'
+// import Button from './components/Button/Button';
 
 // NOTES
 // IF you want components to share the same data, the parents MUST hold the data
@@ -19,7 +21,10 @@ function App() {
         <Info />
       </div>
       <div className="hop__extra">
+        {/* <VendorProvider> */}
         <ListItems />
+          {/* <Button /> */}
+        {/* </VendorProvider> */}
         <Body />
       </div>
     </div>
