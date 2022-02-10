@@ -5,7 +5,7 @@ const Vendor = () => {
 
     // const [vendorsList, setVendorsList] = useState([])
 
-    // { id, name, hours, phone, blurb }
+    // { id, title, hours, phone, blurb }
     // useEffect(() => {
     //     setVendorsList([vendors]);
     //   console.log("vendorsList", vendorsList)
@@ -26,7 +26,7 @@ const Vendor = () => {
         const data = 
             {
                 id: 1,
-                name: "Nelson",
+                title: "Nelson",
                 phone: "(555)555-5555",
                 hours: "M-F, 9 AM to 5 PM",
                 blurb: "Dummy blurb text"
@@ -36,7 +36,7 @@ const Vendor = () => {
             <div className="hop__vendor">
                 <h3 className="vendor__pic">Pic</h3>
                 <div className="vendor__info">
-                    <h3 className="vendor__info">{data.name}</h3>
+                    <h3 className="vendor__info">{data.title}</h3>
                     <h3 className="vendor__info">{data.hours}</h3>
                     <h3 className="vendor__info">{data.phone}</h3>
                     <h3 className="vendor__blurb">{data.blurb}</h3>
