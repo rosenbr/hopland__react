@@ -6,15 +6,6 @@ import Button from '../Button/Button';
 
 const ListItems = () => {
 
-    // ==== | Conext code | ====
-
-    // const vendorDetails = React.useContext(VendorContext);
-    // const setVendorDetails = useContext(VendorDispatchContext);
-
-    // const [vendorDetails, setVendorDetails] = useState({
-    //     title: vendors.title
-    // })
-
     // ==== | State with Robin | ====
 
     // add props in the arrow func above
@@ -171,14 +162,5 @@ const ListItems = () => {
             </div>
         ))
     )
-        
-    // ==== | Context return | ====
-
-    // return (
-        //     <div className='card'>
-        //         <Button />
-        //         <h3>{vendorDetails.title}</h3>
-        //     </div>
-        // )
 }
 export default ListItems;

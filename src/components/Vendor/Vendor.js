@@ -1,44 +1,8 @@
 import React from 'react';
 // import ListItems from '../ListItems/ListItems';
-import MyContext from '../MyContext/MyContext';
 import './Vendor.css';
 
 const Vendor = () => {
-    // <MyContext.Consumer>
-    //     {context => (
-    //         <React.Fragment>
-    //             <h1>Test</h1>
-    //             {Object.keys(context.vendors).map(id => (
-    //                 <Vendor 
-    //                     key={id}
-    //                     title={context.vendors[id].title}
-    //                 />
-    //             ))}
-    //         </React.Fragment>
-    //     )}
-    // </MyContext.Consumer>
-
-    // const vendorDetails = React.useContext(VendorContext);
-    // const setVendorDetails = useContext(VendorDispatchContext);
-
-    // const [vendorsList, setVendorsList] = useState([])
-
-    // { id, title, hours, phone, blurb }
-    // useEffect(() => {
-    //     setVendorsList([vendors]);
-    //   console.log("vendorsList", vendorsList)
-    // }, []);
-
-    // return (
-    //         <div className="hop__vendor">
-    //             <div className="vendor__info">
-    //                 <h3 className="vendor__info" key={id}>{this.name}</h3>
-    //                 {/* <h3 className="vendor__info">{hours}</h3> */}
-    //                 {/* <h3 className="vendor__info">{phone}</h3> */}
-    //                 {/* <h3 className="vendor__info">{blurb}</h3> */}
-    //             </div>
-    //         </div>
-    // )
 
     // === | Test data set and return | ===
         const data = 
