@@ -1,11 +1,14 @@
-import React, {createContext, useState} from "react";
+// import React, {createContext, useState} from "react";
+import { Component } from "react";
+import MyContext from "../MyContext/MyContext";
 
-const VendorContext = createContext(undefined);
-const VendorDispatchContext = createContext(undefined);
+// const VendorContext = createContext(undefined);
+// const VendorDispatchContext = createContext(undefined);
 
-function VendorProvider({children}) {
+class VendorProvider extends Component {
 
-    const [vendorDetails, setVendorDetails] = useState({
+    // const [vendorDetails, setVendorDetails] = useState({
+    state = {
         vendors: [
             {
                 id: 1,
@@ -133,16 +136,25 @@ function VendorProvider({children}) {
                 // reservations: 'Y/N?',
                 // directions: 'tee hee',
             }
-    ]
-    });
+    ]}
+    // });
 
-    return (
-        <VendorContext.Provider value={vendorDetails} >
-            <VendorDispatchContext.Provider value={setVendorDetails}>
-                {children}
-            </VendorDispatchContext.Provider>
-        </VendorContext.Provider>
-    )
+    render() {
+        return (
+            <MyContext.Provider
+                value={{vendors: this.state.vendors}}
+            >
+                {this.props.children}
+            </MyContext.Provider>
+        )
+    } 
+    // return (
+    //     <VendorContext.Provider value={vendorDetails} >
+    //         <VendorDispatchContext.Provider value={setVendorDetails}>
+    //             {children}
+    //         </VendorDispatchContext.Provider>
+    //     </VendorContext.Provider>
+    // )
 }
 
-export default { VendorProvider, VendorContext, VendorDispatchContext };
+export default VendorProvider;

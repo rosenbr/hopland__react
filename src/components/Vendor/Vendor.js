@@ -1,7 +1,22 @@
 import React from 'react';
+// import ListItems from '../ListItems/ListItems';
+import MyContext from '../MyContext/MyContext';
 import './Vendor.css';
 
 const Vendor = () => {
+    // <MyContext.Consumer>
+    //     {context => (
+    //         <React.Fragment>
+    //             <h1>Test</h1>
+    //             {Object.keys(context.vendors).map(id => (
+    //                 <Vendor 
+    //                     key={id}
+    //                     title={context.vendors[id].title}
+    //                 />
+    //             ))}
+    //         </React.Fragment>
+    //     )}
+    // </MyContext.Consumer>
 
     // const vendorDetails = React.useContext(VendorContext);
     // const setVendorDetails = useContext(VendorDispatchContext);
