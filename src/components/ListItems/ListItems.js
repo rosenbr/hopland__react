@@ -1,8 +1,10 @@
 // import React, {useContext} from 'react';
+// import React from 'react';
 // import "useEffect, useState" above
 import React, {useEffect, useState} from 'react';
 import './ListItems.css';
 import Button from '../Button/Button';
+
 
 const ListItems = () => {
 
@@ -15,9 +17,11 @@ const ListItems = () => {
     //     hours: props.hours
     // )
 
+
+    // ===== | Current working code below | =====
     const [vendorsList, setVendorsList] = useState([]);
 
-    let vendors = [
+        let vendors = [
             {
                 id: 1,
                 title: 'Nelson Family',
