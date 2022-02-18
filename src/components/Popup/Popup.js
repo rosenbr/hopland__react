@@ -8,7 +8,7 @@ const Popup = (props) => {
                 <div className="popup__inner">
                     <button className="close__button" onClick={() => props.setTrigger(false)}>X</button>
                     {props.children}
-                    <Vendor />
+                    <Vendor vendor={props.vendor}/>
                 </div>
             </div>
         ) : "";

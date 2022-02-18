@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './Button.css';
 import Popup from '../Popup/Popup';
 
-const Button = () => {
+const Button = (props) => {
 
     const [buttonPopup, setButtonPopup] = useState(false);
 
@@ -13,6 +13,7 @@ const Button = () => {
                 <Popup 
                     trigger={buttonPopup}
                     setTrigger={setButtonPopup}
+                    vendor={props.vendor}
                 />
             </div>
         </div>
