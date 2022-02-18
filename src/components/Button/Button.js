@@ -9,7 +9,7 @@ const Button = (props) => {
     return(
         <div className="hop__main">
             <div className="hop__popup">
-                <button onClick={() => setButtonPopup(true)}>Test button</button>
+                <button onClick={() => setButtonPopup(true)}>{props.vendor.title}</button>
                 <Popup 
                     trigger={buttonPopup}
                     setTrigger={setButtonPopup}
