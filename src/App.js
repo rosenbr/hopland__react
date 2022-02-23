@@ -15,7 +15,7 @@ function App() {
         phone: '(707)462-3755',
         blurb: 'Loreum Ipsum'
         // reservations: 'Yes',
-        // directions: 'tee hee',
+        // directions: 'Loreum Ipsum',
     },
     {
         id: 2,
@@ -24,7 +24,7 @@ function App() {
         phone: '(707)462-6666',
         blurb: 'Loreum Ipsum'
         // reservations: 'Y/N?',
-        // directions: 'tee hee',
+        // directions: 'Loreum Ipsum',
     },
     {
         id: 3,
@@ -33,7 +33,7 @@ function App() {
         phone: '(707)670-0199',
         blurb: 'Loreum Ipsum'
         // reservations: 'Y/N?',
-        // directions: 'tee hee',
+        // directions: 'Loreum Ipsum',
     },
     {
         id: 4,
@@ -42,7 +42,7 @@ function App() {
         phone: '(707)670-6055',
         blurb: 'Loreum Ipsum'
         // reservations: 'Y/N?',
-        // directions: 'tee hee',
+        // directions: 'Loreum Ipsum',
     },
     {
         id: 5,
@@ -51,7 +51,7 @@ function App() {
         phone: '(707)744-8375',
         blurb: 'Loreum Ipsum'
         // reservations: 'Y/N?',
-        // directions: 'tee hee',
+        // directions: 'Loreum Ipsum',
     },
     {
         id: 6,
@@ -60,7 +60,7 @@ function App() {
         phone: '(707)462-2423',
         blurb: 'Loreum Ipsum'
         // reservations: 'Y/N?',
-        // directions: 'tee hee',
+        // directions: 'Loreum Ipsum',
     },
     {
         id: 7,
@@ -69,7 +69,7 @@ function App() {
         phone: '(707)744-1066',
         blurb: 'Loreum Ipsum'
         // reservations: 'Y/N?',
-        // directions: 'tee hee',
+        // directions: 'Loreum Ipsum',
     },
     {
         id: 8,
@@ -78,7 +78,7 @@ function App() {
         phone: '(707)391-8411',
         blurb: 'Loreum Ipsum'
         // reservations: 'Y/N?',
-        // directions: 'tee hee',
+        // directions: 'Loreum Ipsum',
     },
     {
         id: 9,
@@ -87,7 +87,7 @@ function App() {
         phone: '(707)744-1114',
         blurb: 'Loreum Ipsum'
         // reservations: 'Y/N?',
-        // directions: 'tee hee',
+        // directions: 'Loreum Ipsum',
     },
     {
         id: 10,
@@ -96,7 +96,7 @@ function App() {
         phone: '(707)540-4311',
         blurb: 'Loreum Ipsum'
         // reservations: 'Y/N?',
-        // directions: 'tee hee',
+        // directions: 'Loreum Ipsum',
     },
     {
         id: 11,
@@ -105,7 +105,7 @@ function App() {
         phone: '(707)744-8466',
         blurb: 'Loreum Ipsum'
         // reservations: 'Y/N?',
-        // directions: 'tee hee',
+        // directions: 'Loreum Ipsum',
     },
     {
         id: 12,
@@ -114,7 +114,7 @@ function App() {
         phone: '(800)544-8230',
         blurb: 'Loreum Ipsum'
         // reservations: 'Y/N?',
-        // directions: 'tee hee',
+        // directions: 'Loreum Ipsum',
     },
     {
         id: 13,
@@ -123,7 +123,7 @@ function App() {
         phone: '(707)510-9000',
         blurb: 'Loreum Ipsum'
         // reservations: 'Y/N?',
-        // directions: 'tee hee',
+        // directions: 'Loreum Ipsum',
     },
     {
         id: 14,
@@ -132,7 +132,7 @@ function App() {
         phone: '(707)744-1977',
         blurb: 'Loreum Ipsum'
         // reservations: 'Y/N?',
-        // directions: 'tee hee',
+        // directions: 'Loreum Ipsum',
     }
   ]
 
